@@ -1,11 +1,14 @@
 {
-  "name": "Ricad-homepage",
+  "homepage": "https://ricadagussetiawan.github.io/RicadAgusSetiawan",
+  "name": "ricadagussetiawan",
   "version": "1.0.0",
   "description": "Ricad's website",
   "scripts": {
     "dev": "next dev -H 0.0.0.0",
     "build": "next build",
     "start": "next start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "prettier": "prettier --write .",
     "lint": "next lint"
   },
